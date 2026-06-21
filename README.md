@@ -13,14 +13,13 @@ The project follows this order:
 3. `03_hypothesis_testing.ipynb` — statistical testing for feature selection  
 4. `04_KNN_model.ipynb` — KNN classification model for churn prediction
 
-
-### 01_data_understanding_cleanng.ipynb
-
 // ...existing code...
 
 # CustomerMind Analytics — Visualizations & Short Conclusions
 
-This README is updated to include the main visualizations produced in `01_data_understanding_cleanng.ipynb`. Inserted images are referenced from the `images/` folder and each visualization includes a short conclusion.
+The following visualizations are produced from `01_data_understanding_cleanng.ipynb`. Place PNG files in the repository folder `images/` with the names below (or run the notebook and save figures to these names). If an image is missing the README will show the alt text — run the notebook or add the PNG to fix broken links.
+
+Expected image files and short conclusions:
 
 1. Churn Distribution  
    ![Churn Distribution](images/churn_distribution.png)  
@@ -32,7 +31,7 @@ This README is updated to include the main visualizations produced in `01_data_u
 
 3. Top Country-City by Churn Count  
    ![Country-City Churn](images/country_city_churn.png)  
-   Conclusion: A few city/regions contribute disproportionately to churn — local interventions recommended.
+   Conclusion: A few cities/regions contribute disproportionately to churn — local interventions recommended.
 
 4. Membership Years vs Churn  
    ![Membership Years](images/membership_vs_churn.png)  
@@ -42,7 +41,7 @@ This README is updated to include the main visualizations produced in `01_data_u
    ![Login Frequency](images/login_frequency.png)  
    Conclusion: Higher login frequency correlates with lower churn — engagement matters.
 
-6. Session Duration vs Pages Per Session (Engagement Scatter)  
+6. Session Duration vs Pages Per Session  
    ![Session vs Pages](images/session_vs_pages.png)  
    Conclusion: Longer sessions relate to more pages viewed — engaged users are less likely to churn.
 
@@ -68,15 +67,26 @@ This README is updated to include the main visualizations produced in `01_data_u
 
 12. Lifetime Value Distribution among Churned Customers  
     ![LTV Distribution](images/ltv_distribution.png)  
-    Conclusion: Significant churn exists across low- and high-value segments — tailor retention by value.
+    Conclusion: Churn spans low- and high-value customers — tailor retention by customer value.
 
 13. Correlation Heatmap of Numerical Features  
     ![Correlation Heatmap](images/correlation_heatmap.png)  
     Conclusion: Customer_Service_Calls and Cart_Abandonment_Rate positively correlate with churn; engagement metrics negatively correlate.
 
-Notes:
-- Image filenames assume PNGs in `images/`. If your filenames differ, rename or update paths accordingly.
-- Visual conclusions are concise summaries of the analyses in `01_data_understanding_cleanng.ipynb`.
+How to generate and save images from the notebook (example snippet to add after each plotting cell):
+
+```python
+# filepath: (add inside notebook near each plt.show())
+plt.savefig("images/churn_distribution.png", bbox_inches="tight")
+plt.show()
+```
+
+If you want, I can:
+- produce a list of the exact save commands to add into the notebook, or
+- update the README to match your actual image filenames if you provide the files.
+
+
+
 
 ---
 ## Project Objective
