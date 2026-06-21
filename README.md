@@ -22,7 +22,7 @@ The following visualizations are produced from `01_data_understanding_cleanng.ip
 Expected image files and short conclusions:
 
 1. Churn Distribution
-   ![Churn Distribution](images/churned vs non churn customer1.png)
+   ![Churn Distribution](images/churned%20vs%20non%20churn%20customer1.png)
    Conclusion: ~29% of customers churn — churn is a significant business issue.
 
 2. Churn Rate by Age Group
@@ -42,11 +42,11 @@ Expected image files and short conclusions:
    Conclusion: Non-churned customers log in more frequently — engagement reduces churn risk.
 
 6. Session Duration vs Pages Per Session
-   ![Session vs Pages](images/SessionDuration _and _PagesPerSession5.png)
+   ![Session vs Pages](images/SessionDuration%20_and%20_PagesPerSession5.png)
    Conclusion: Longer sessions associate with more pages viewed — higher engagement.
 
 7. Total Purchases & Average Order Value by Churn
-   ![Purchases and AOV](images/Total Purchases_and_AverageOrderValue7.png)
+   ![Purchases and AOV](images/Total%20Purchases_and_AverageOrderValue7.png)
    Conclusion: Non-churned customers have higher total purchases; AOV differences may indicate different buying patterns.
 
 8. Days Since Last Purchase (Box Plot)
