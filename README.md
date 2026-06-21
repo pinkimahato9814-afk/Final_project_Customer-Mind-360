@@ -132,7 +132,7 @@ Some important findings from the EDA are:
 - Cart abandonment and customer service calls appear to be strongly connected with churn.
 - The company should focus on improving customer engagement, reducing cart abandonment, and solving customer problems earlier.
 
----
+
 
 The project follows this order:
 
@@ -143,9 +143,7 @@ The project follows this order:
 
 
 
-// ...existing code...
-
-# CustomerMind Analytics — Visualizations with Conclusions
+# Visualizations with Conclusions
 
 The following visualizations are produced from `01_data_understanding_cleanng.ipynb`.
 The images are stored in the `images/` folder 
@@ -598,6 +596,7 @@ Classification Report
 ---
 
 ## How to Run the Project
+<mark>step1 :<mark>
 
 Run the notebooks in this order:
 
@@ -607,6 +606,16 @@ Run the notebooks in this order:
 03_hypothesis_testing.ipynb
 04_KNN_model.ipynb
 ```
+
+<mark>step2 :<mark>
+
+Customer_churn_streamlit on cleaned_dataset.csv
+app.py
+home.py
+models.py
+requirements.txt
+
+
 
 The first notebook creates the cleaned dataset. The later notebooks depend on this cleaned dataset, so the first notebook should be completed before running the others.
 
@@ -640,6 +649,5 @@ The project can be improved further by:
 - Improving recall for churned customers
 - Using cross-validation for more stable evaluation
 - Applying advanced feature engineering
-- Creating a Streamlit dashboard for business users
 - Adding customer retention recommendations based on prediction results
 
