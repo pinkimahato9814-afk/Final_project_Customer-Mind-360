@@ -13,8 +13,72 @@ The project follows this order:
 3. `03_hypothesis_testing.ipynb` — statistical testing for feature selection  
 4. `04_KNN_model.ipynb` — KNN classification model for churn prediction
 
----
 
+### 01_data_understanding_cleanng.ipynb
+
+// ...existing code...
+
+# CustomerMind Analytics — Visualizations & Short Conclusions
+
+This README is updated to include the main visualizations produced in `01_data_understanding_cleanng.ipynb`. Inserted images are referenced from the `images/` folder and each visualization includes a short conclusion.
+
+1. Churn Distribution  
+   ![Churn Distribution](images/churn_distribution.png)  
+   Conclusion: ~29% customers churn — churn is a significant business issue.
+
+2. Churn Rate by Age Group  
+   ![Churn by Age](images/churn_by_age.png)  
+   Conclusion: Younger cohorts show higher churn; target youth engagement.
+
+3. Top Country-City by Churn Count  
+   ![Country-City Churn](images/country_city_churn.png)  
+   Conclusion: A few city/regions contribute disproportionately to churn — local interventions recommended.
+
+4. Membership Years vs Churn  
+   ![Membership Years](images/membership_vs_churn.png)  
+   Conclusion: Average membership years similar across groups — tenure alone is a weak predictor.
+
+5. Login Frequency by Churn Status  
+   ![Login Frequency](images/login_frequency.png)  
+   Conclusion: Higher login frequency correlates with lower churn — engagement matters.
+
+6. Session Duration vs Pages Per Session (Engagement Scatter)  
+   ![Session vs Pages](images/session_vs_pages.png)  
+   Conclusion: Longer sessions relate to more pages viewed — engaged users are less likely to churn.
+
+7. Total Purchases & Average Order Value by Churn  
+   ![Purchases and AOV](images/purchases_avg_order.png)  
+   Conclusion: Non-churned customers have higher purchases/AOV — value signals retention.
+
+8. Days Since Last Purchase (Box Plot)  
+   ![Days Since Last Purchase](images/days_since_last_purchase.png)  
+   Conclusion: Churned customers have longer inactivity gaps — re-engage inactive users.
+
+9. Discount Usage Rate Analysis  
+   ![Discount Usage Rate](images/discount_usage.png)  
+   Conclusion: Low discount users show higher churn in this dataset — examine promotional effects.
+
+10. Average Email Open Rate by Churn Status  
+    ![Email Open Rate](images/email_open_rate.png)  
+    Conclusion: Higher email open rates associate with lower churn — email engagement is protective.
+
+11. Customer Service Calls by Churn Status  
+    ![Customer Service Calls](images/customer_service_calls.png)  
+    Conclusion: Churned customers make more service calls — unresolved issues drive churn.
+
+12. Lifetime Value Distribution among Churned Customers  
+    ![LTV Distribution](images/ltv_distribution.png)  
+    Conclusion: Significant churn exists across low- and high-value segments — tailor retention by value.
+
+13. Correlation Heatmap of Numerical Features  
+    ![Correlation Heatmap](images/correlation_heatmap.png)  
+    Conclusion: Customer_Service_Calls and Cart_Abandonment_Rate positively correlate with churn; engagement metrics negatively correlate.
+
+Notes:
+- Image filenames assume PNGs in `images/`. If your filenames differ, rename or update paths accordingly.
+- Visual conclusions are concise summaries of the analyses in `01_data_understanding_cleanng.ipynb`.
+
+---
 ## Project Objective
 
 The main objective of this project is to understand customer behavior and predict customer churn. Customer churn means a customer has stopped using or buying from the business.
