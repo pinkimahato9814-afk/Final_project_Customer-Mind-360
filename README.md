@@ -17,61 +17,61 @@ The project follows this order:
 
 # CustomerMind Analytics — Visualizations & Short Conclusions
 
-The following visualizations are produced from `01_data_understanding_cleanng.ipynb`. Place PNG files in the repository folder `images/` with the names below (or run the notebook and save figures to these names). If an image is missing the README will show the alt text — run the notebook or add the PNG to fix broken links.
+The following visualizations are produced from `01_data_understanding_cleanng.ipynb`. The images are stored in the `images/` folder — below I reference the actual filenames found in that folder and add short conclusions.
 
 Expected image files and short conclusions:
 
-1. Churn Distribution  
-   ![Churn Distribution](images/churn_distribution.png)  
-   Conclusion: ~29% customers churn — churn is a significant business issue.
+1. Churn Distribution
+   ![Churn Distribution](images/churned vs non churn customer1.png)
+   Conclusion: ~29% of customers churn — churn is a significant business issue.
 
-2. Churn Rate by Age Group  
-   ![Churn by Age](images/churn_by_age.png)  
-   Conclusion: Younger cohorts show higher churn; target youth engagement.
+2. Churn Rate by Age Group
+   ![Churn by Age](images/churn_by_age.png)
+   Conclusion: Younger cohorts (18–35) show higher churn; prioritize youth engagement.
 
-3. Top Country-City by Churn Count  
-   ![Country-City Churn](images/country_city_churn.png)  
-   Conclusion: A few cities/regions contribute disproportionately to churn — local interventions recommended.
+3. Top Country-City by Churn Count
+   ![Country-City Churn](images/churned_by_country_city3.png)
+   Conclusion: A few city/regions contribute many churned customers — target local actions.
 
-4. Membership Years vs Churn  
-   ![Membership Years](images/membership_vs_churn.png)  
-   Conclusion: Average membership years similar across groups — tenure alone is a weak predictor.
+4. Membership Years vs Churn
+   ![Membership Years](images/membership_vs_churn4.png)
+   Conclusion: Average membership years are similar across churn groups — tenure alone is weak.
 
-5. Login Frequency by Churn Status  
-   ![Login Frequency](images/login_frequency.png)  
-   Conclusion: Higher login frequency correlates with lower churn — engagement matters.
+5. Login Frequency by Churn Status
+   ![Login Frequency](images/LoginFrequency_vs_Churn5.png)
+   Conclusion: Non-churned customers log in more frequently — engagement reduces churn risk.
 
-6. Session Duration vs Pages Per Session  
-   ![Session vs Pages](images/session_vs_pages.png)  
-   Conclusion: Longer sessions relate to more pages viewed — engaged users are less likely to churn.
+6. Session Duration vs Pages Per Session
+   ![Session vs Pages](images/SessionDuration _and _PagesPerSession5.png)
+   Conclusion: Longer sessions associate with more pages viewed — higher engagement.
 
-7. Total Purchases & Average Order Value by Churn  
-   ![Purchases and AOV](images/purchases_avg_order.png)  
-   Conclusion: Non-churned customers have higher purchases/AOV — value signals retention.
+7. Total Purchases & Average Order Value by Churn
+   ![Purchases and AOV](images/Total Purchases_and_AverageOrderValue7.png)
+   Conclusion: Non-churned customers have higher total purchases; AOV differences may indicate different buying patterns.
 
-8. Days Since Last Purchase (Box Plot)  
-   ![Days Since Last Purchase](images/days_since_last_purchase.png)  
-   Conclusion: Churned customers have longer inactivity gaps — re-engage inactive users.
+8. Days Since Last Purchase (Box Plot)
+   ![Days Since Last Purchase](images/DaysSincLastPurchaseBYCS9.png)
+   Conclusion: Churned customers show longer inactivity gaps — re-engagement needed for inactive users.
 
-9. Discount Usage Rate Analysis  
-   ![Discount Usage Rate](images/discount_usage.png)  
-   Conclusion: Low discount users show higher churn in this dataset — examine promotional effects.
+9. Discount Usage Rate Analysis (counts and churn rate)
+   ![Discount Usage Rate](images/DiscountUsageRateAnalysis10.png)
+   Conclusion: Low discount users show the highest churn rate here — review promo strategy and segmentation.
 
-10. Average Email Open Rate by Churn Status  
-    ![Email Open Rate](images/email_open_rate.png)  
+10. Average Email Open Rate by Churn Status
+    ![Email Open Rate](images/EmailOpenRateAnalysis11.png)
     Conclusion: Higher email open rates associate with lower churn — email engagement is protective.
 
-11. Customer Service Calls by Churn Status  
-    ![Customer Service Calls](images/customer_service_calls.png)  
-    Conclusion: Churned customers make more service calls — unresolved issues drive churn.
+11. Customer Service Calls by Churn Status
+    ![Customer Service Calls](images/AverageCustomerServiceCallsBYChurnStatus12.png)
+    Conclusion: Churned customers make more service calls on average — unresolved issues may drive churn.
 
-12. Lifetime Value Distribution among Churned Customers  
-    ![LTV Distribution](images/ltv_distribution.png)  
-    Conclusion: Churn spans low- and high-value customers — tailor retention by customer value.
+12. Lifetime Value Distribution among Churned Customers
+    ![LTV Distribution](images/LifetimeValueAnalysis13.png)
+    Conclusion: A notable share of churn comes from low-value customers, but high-value churn still requires retention focus.
 
-13. Correlation Heatmap of Numerical Features  
-    ![Correlation Heatmap](images/correlation_heatmap.png)  
-    Conclusion: Customer_Service_Calls and Cart_Abandonment_Rate positively correlate with churn; engagement metrics negatively correlate.
+13. Correlation Heatmap of Numerical Features
+    ![Correlation Heatmap](images/hitmap14.png)
+    Conclusion: Engagement metrics (login, session, pages, email open) negatively correlate with churn; service calls and cart abandonment correlate positively.
 
 How to generate and save images from the notebook (example snippet to add after each plotting cell):
 
