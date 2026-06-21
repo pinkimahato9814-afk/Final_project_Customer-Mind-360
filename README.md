@@ -610,11 +610,16 @@ Run the notebooks in this order:
 <mark>step2 :<mark>
 
 Customer_churn_streamlit on cleaned_dataset.csv
+```text
 app.py
+
 home.py
+
 models.py
+
 requirements.txt
 
+```
 
 
 The first notebook creates the cleaned dataset. The later notebooks depend on this cleaned dataset, so the first notebook should be completed before running the others.
